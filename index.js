@@ -8,4 +8,4 @@ const server = http.createServer((req, res) => {
   res.write('{"message": "ok"}', 'utf-8')
   res.end()
 })
-server.listen(8000)
+server.listen(process.env.PORT || 8000)
